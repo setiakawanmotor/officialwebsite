@@ -1,0 +1,2327 @@
+f<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ7ZRTWEF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DJ7ZRTWEF6');
+</script>
+
+  <title>Setia Kawan Motor Cirebon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Google Sans', sans-serif; }
+
+/* Animasi masuk halus */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.7s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi modal */
+@keyframes scaleFade {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Smooth hover card */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive image */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ===============================
+   PREMIUM MOTION & MICRO INTERACTIONS
+================================ */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(217,4,41,.18); }
+  50% { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(217,4,41,0); }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-120%) skewX(-18deg); }
+  100% { transform: translateX(180%) skewX(-18deg); }
+}
+
+@keyframes marqueeGlow {
+  0%, 100% { opacity: .65; }
+  50% { opacity: 1; }
+}
+
+.float-soft { animation: floatY 4s ease-in-out infinite; }
+.pulse-soft { animation: pulseSoft 2.8s ease-in-out infinite; }
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(28px) scale(.98);
+  transition: opacity .75s ease, transform .75s cubic-bezier(.22,1,.36,1);
+}
+.reveal-card.show { opacity: 1; transform: translateY(0) scale(1); }
+
+.service-card { position: relative; overflow: hidden; }
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+  transform: skewX(-18deg);
+  transition: none;
+  pointer-events: none;
+}
+.service-card:hover::after { animation: shine .8s ease; }
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .35s ease;
+}
+.faq-answer > div { overflow: hidden; }
+.faq-item.open .faq-answer { grid-template-rows: 1fr; }
+.faq-item .faq-icon { transition: transform .3s ease; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- NAVBAR -->
+<nav
+  data-navbar
+  class="fixed top-0 w-full z-50 bg-[#D90429] text-white transition-all duration-300 shadow-lg">
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center min-h-[72px]">
+
+    <!-- LOGO -->
+    <a href="#home" class="flex items-center shrink-0" aria-label="Setia Kawan Motor - Beranda">
+      <img
+        src="img/logoskm.png"
+        alt="Setia Kawan Motor"
+        class="h-12 sm:h-14 w-auto brightness-0 invert" />
+    </a>
+
+    <!-- MENU DESKTOP -->
+    <ul class="hidden md:flex items-center gap-7 lg:gap-8 text-sm font-medium ml-auto mr-6">
+      <li><a href="#home" class="nav-link text-white/95 hover:text-white transition-colors">Beranda</a></li>
+      <li><a href="#produk" class="nav-link text-white/95 hover:text-white transition-colors">Produk</a></li>
+      <li><a href="#promo" class="nav-link text-white/95 hover:text-white transition-colors">Promo</a></li>
+      <li><a href="#simulasi-kredit" class="nav-link text-white/95 hover:text-white transition-colors">Simulasi Kredit</a></li>
+      <li><a href="#tentang" class="nav-link text-white/95 hover:text-white transition-colors">Tentang Kami</a></li>
+      <li><a href="#faq" class="nav-link text-white/95 hover:text-white transition-colors">FAQ</a></li>
+    </ul>
+
+    <!-- CTA DESKTOP -->
+    <div class="hidden md:block">
+      <a
+        href="https://wa.me/6283821651354"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="gtag('event','click_whatsapp',{event_category:'CTA',event_label:'Navbar Desktop'})"
+        class="inline-flex items-center justify-center bg-white text-[#D90429] hover:bg-[#FFF1F3] px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 shadow-sm hover:shadow-md">
+        Chat WhatsApp
+      </a>
+    </div>
+
+    <!-- HAMBURGER MOBILE -->
+    <button
+      id="menuBtn"
+      type="button"
+      class="md:hidden ml-auto text-white p-2 rounded-lg hover:bg-white/10 transition"
+      aria-label="Buka menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div
+  id="mobileMenu"
+  class="fixed top-[72px] left-0 w-full bg-white shadow-xl hidden md:hidden z-40 border-t border-red-100">
+  <ul class="flex flex-col text-sm font-medium">
+    <li><a href="#home" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">Beranda</a></li>
+    <li><a href="#produk" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">Produk</a></li>
+    <li><a href="#promo" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">Promo</a></li>
+    <li><a href="#simulasi-kredit" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">Simulasi Kredit</a></li>
+    <li><a href="#tentang" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">Tentang Kami</a></li>
+    <li><a href="#layanan" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">Servis & Sparepart</a></li>
+    <li><a href="#faq" class="block px-6 py-4 text-gray-800 hover:bg-red-50 hover:text-[#D90429] transition">FAQ</a></li>
+    <li class="px-6 py-4">
+      <a
+        href="https://wa.me/6283821651354"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="gtag('event','click_whatsapp',{event_category:'CTA',event_label:'Mobile Menu'})"
+        class="block text-center bg-[#D90429] hover:bg-[#B90322] text-white py-3 rounded-lg font-bold transition">
+        Chat WhatsApp
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- HERO CAROUSEL -->
+<section
+  id="home"
+  class="relative h-[92svh] min-h-[620px] md:h-[88vh] md:min-h-[680px] overflow-hidden fade-up">
+
+  <!-- SLIDES -->
+  <div id="heroCarousel" class="absolute inset-0">
+
+    <!-- SLIDE 1 -->
+    <article class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-700 ease-in-out" data-slide="0">
+      <img
+        src="img/SKM.jpg"
+        alt="Setia Kawan Motor Cirebon"
+        class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/30"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+
+      <div class="relative z-10 h-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex items-center">
+        <div class="max-w-2xl text-white pt-16 md:pt-10">
+          <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/15 border border-white/20 backdrop-blur-sm text-xs sm:text-sm font-semibold mb-5">
+            Dealer Resmi Motor Honda di Cirebon
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight mb-5">
+            Beli Motor Honda<br>
+            <span class="text-[#FF334F]">Lebih Mudah & Terpercaya</span>
+          </h1>
+          <p class="text-white/85 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+            Temukan motor Honda yang sesuai kebutuhan Anda dengan harga transparan, pilihan kredit, dan pelayanan yang siap membantu.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#produk" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#D90429] hover:bg-[#B90322] text-white font-bold transition shadow-lg shadow-black/20">
+              Lihat Produk →
+            </a>
+            <a href="#simulasi-kredit" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-[#D90429] hover:bg-[#FFF1F3] font-bold transition shadow-lg shadow-black/20">
+              Simulasi Kredit
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SLIDE 2 -->
+    <article class="hero-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-700 ease-in-out" data-slide="1">
+      <img
+        src="img/produk.jpeg"
+        alt="Pilihan motor Honda terbaru"
+        class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/15"></div>
+
+      <div class="relative z-10 h-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex items-center">
+        <div class="max-w-2xl text-white pt-16 md:pt-10">
+          <span class="inline-flex items-center px-4 py-2 rounded-full bg-[#D90429] text-white text-xs sm:text-sm font-bold mb-5 shadow-lg">
+            Honda Pilihan Anda
+          </span>
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight mb-5">
+            Temukan Motor<br>
+            <span class="text-[#FF334F]">Sesuai Gaya Anda</span>
+          </h2>
+          <p class="text-white/85 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+            Dari motor matic untuk aktivitas harian hingga pilihan premium untuk perjalanan yang lebih nyaman dan stylish.
+          </p>
+          <a href="#produk" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#D90429] hover:bg-[#B90322] text-white font-bold transition shadow-lg">
+            Jelajahi Produk →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- SLIDE 3 -->
+    <article class="hero-slide absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-700 ease-in-out" data-slide="2">
+      <img
+        src="img/sales.jpeg"
+        alt="Promo motor Honda Setia Kawan Motor"
+        class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/15"></div>
+
+      <div class="relative z-10 h-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex items-center">
+        <div class="max-w-2xl text-white pt-16 md:pt-10">
+          <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/15 border border-white/20 backdrop-blur-sm text-xs sm:text-sm font-semibold mb-5">
+            Promo & Kredit Honda
+          </span>
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight mb-5">
+            Wujudkan Motor Impian<br>
+            <span class="text-[#FF334F]">Dengan Proses Lebih Mudah</span>
+          </h2>
+          <p class="text-white/85 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+            Konsultasikan pilihan motor, promo, DP, dan kebutuhan kredit Anda bersama tim Setia Kawan Motor.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#promo" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#D90429] hover:bg-[#B90322] text-white font-bold transition shadow-lg">
+              Lihat Promo →
+            </a>
+            <a href="https://wa.me/6283821651354" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-[#D90429] hover:bg-[#FFF1F3] font-bold transition shadow-lg">
+              Chat Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- ARROWS -->
+  <button
+    id="heroPrev"
+    type="button"
+    aria-label="Slide sebelumnya"
+    class="absolute left-4 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-white/15 hover:bg-white text-white hover:text-[#D90429] border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-200 shadow-lg">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+    </svg>
+  </button>
+
+  <button
+    id="heroNext"
+    type="button"
+    aria-label="Slide berikutnya"
+    class="absolute right-4 sm:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-white/15 hover:bg-white text-white hover:text-[#D90429] border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-200 shadow-lg">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+    </svg>
+  </button>
+
+  <!-- DOTS -->
+  <div id="heroDots" class="absolute bottom-7 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5" aria-label="Navigasi slide">
+    <button type="button" class="hero-dot w-8 h-2 rounded-full bg-white transition-all duration-300" aria-label="Slide 1"></button>
+    <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/45 hover:bg-white/80 transition-all duration-300" aria-label="Slide 2"></button>
+    <button type="button" class="hero-dot w-2 h-2 rounded-full bg-white/45 hover:bg-white/80 transition-all duration-300" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<!-- KENAPA SETIA KAWAN MOTOR -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">
+      Kenapa Harus Setia Kawan Motor?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+      <!-- ITEM 1 -->
+      <div class="group p-6">
+        <div
+          class="relative w-20 h-20 mx-auto mb-5 flex items-center justify-center
+                 rounded-full bg-blue-100
+                 transition-all duration-300
+                 group-hover:scale-110
+                 group-hover:shadow-lg
+                 group-hover:shadow-blue-300">
+
+          <svg
+            class="transition-all duration-300 group-hover:-rotate-6"
+            width="36" height="36" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12.5L11.5 15L15.5 9.5"
+              stroke="#2563EB"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="9"
+              stroke="#2563EB"
+              stroke-width="2.5"/>
+          </svg>
+        </div>
+
+        <h3 class="font-semibold text-lg mb-2">
+          Dealer Resmi & Terpercaya
+        </h3>
+        <p class="text-sm text-gray-600">
+          Dealer resmi Honda dengan proses aman, transparan, dan bergaransi.
+        </p>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="group p-6">
+        <div
+          class="relative w-20 h-20 mx-auto mb-5 flex items-center justify-center
+                 rounded-full bg-green-100
+                 transition-all duration-300
+                 group-hover:scale-110
+                 group-hover:shadow-lg
+                 group-hover:shadow-green-300">
+
+          <svg
+            class="transition-all duration-300 group-hover:rotate-6"
+            width="36" height="36" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12L12 20L4 12L12 4L20 12Z"
+              stroke="#16A34A"
+              stroke-width="2.5"
+              stroke-linejoin="round"/>
+            <circle cx="9" cy="9" r="1.8" fill="#16A34A"/>
+            <circle cx="15" cy="15" r="1.8" fill="#16A34A"/>
+          </svg>
+        </div>
+
+        <h3 class="font-semibold text-lg mb-2">
+          DP Ringan & Promo Menarik
+        </h3>
+        <p class="text-sm text-gray-600">
+          Banyak pilihan promo, DP ringan, dan kemudahan kredit sesuai kebutuhan.
+        </p>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="group p-6">
+        <div
+          class="relative w-20 h-20 mx-auto mb-5 flex items-center justify-center
+                 rounded-full bg-orange-100
+                 transition-all duration-300
+                 group-hover:scale-110
+                 group-hover:shadow-lg
+                 group-hover:shadow-orange-300">
+
+          <svg
+            class="transition-all duration-300 group-hover:-rotate-6"
+            width="36" height="36" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12"
+              stroke="#EA580C"
+              stroke-width="2.5"
+              stroke-linecap="round"/>
+            <rect x="2" y="11" width="4" height="6" rx="2"
+              fill="#FED7AA"/>
+            <rect x="18" y="11" width="4" height="6" rx="2"
+              fill="#FED7AA"/>
+          </svg>
+        </div>
+
+        <h3 class="font-semibold text-lg mb-2">
+          Pelayanan Ramah & Cepat
+        </h3>
+        <p class="text-sm text-gray-600">
+          Konsultasi responsif melalui WhatsApp, dibantu sampai motor diterima.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- PRODUK BARU HONDA -->
+  <section id="produk" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-12 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Produk Baru Honda</h2>
+        <p class="text-gray-600">Pilihan motor Honda terbaru dengan teknologi modern dan desain terbaik</p>
+      </div>
+
+      <!-- Carousel -->
+      <div class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl shadow-lg">
+        <div id="autoCarousel" class="flex transition-transform duration-700 ease-in-out">
+            <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/tr:q-70,pr-true,f-auto/uploads/page/banner/homepagebannersporty1366x573pxldz-1-1-26062026-072712.jpg" alt="Produk Baru Honda" />
+            <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/tr:q-70,pr-true,f-auto/uploads/page/banner/homepage-banner-1366x573-2-26062026-072717.jpg" alt="Produk Baru Honda" />
+            <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/uploads/page/banner/homepage-banner-1366x573px-2-24062026-045950.jpg" alt="Produk Baru Honda" />
+            <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/page/banner/home-page-banner1366px-x-573px-option-2-02042026-085207.jpg" alt="Produk Baru Honda" />
+          <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/page/banner/homepage-banner-1366x573ai-11022026-070311.jpg" alt="Produk Baru Honda" />
+          <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/page/banner/homepage-banner-1366x573-copy-1-01122025-062202.jpg" alt="Produk Baru Honda" />
+          <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/page/banner/homepage-banner-1366x573-copy-13112025-090329.jpg" alt="Produk Baru Honda" />
+          <img class="w-full flex-shrink-0" src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/product-draft/banner/02-product-banner-1920x800-29102025-031652.jpg" alt="Produk Baru Honda" />
+        </div>
+      </div>
+
+      <script>
+        const carousel = document.getElementById('autoCarousel');
+        const slides = carousel.children.length;
+        let index = 0;
+
+        setInterval(() => {
+          index = (index + 1) % slides;
+          carousel.style.transform = `translateX(-${index * 100}%)`;
+        }, 3500);
+      </script>
+
+      <!-- Kategori Favorit -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-bold mb-10 text-center">Pilih Motor Favorit Anda</h3>
+
+        <!-- TAB KATEGORI -->
+        <div class="flex justify-center gap-4 mb-12 flex-wrap">
+          <button onclick="showCategory('matic')" class="tab-btn bg-red-600 text-white px-6 py-2 rounded-full font-semibold">Matic</button>
+          <button onclick="showCategory('sport')" class="tab-btn bg-gray-100 px-6 py-2 rounded-full font-semibold">Sport</button>
+          <button onclick="showCategory('cub')" class="tab-btn bg-gray-100 px-6 py-2 rounded-full font-semibold">Cub</button>
+          <button onclick="showCategory('ev')" class="tab-btn bg-gray-100 px-6 py-2 rounded-full font-semibold">EV</button>
+        </div>
+
+        <!-- MATIC -->
+        <div id="matic" class="category-block mb-14 ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- BeAT -->
+           <div class="bg-white rounded-3xl p-5
+            shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+            hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+            hover:-translate-y-1
+            transition-all duration-300
+            fade-up">
+            <div class="overflow-hidden rounded-2xl">
+              <img src="https://ik.imagekit.io/zlt25mb52fx/tr:w-550,f-auto/uploads/product/thumbnail/new-thumbnail-beat-1-26062026-055630.png" class="mx-auto transition-transform duration-300 hover:scale-105">
+            </div>
+              <h5 class="font-bold">BeAT</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 19,475,000</span></p>
+                <button
+                  onclick="openModal({
+                    name: 'BeAT',
+                    desc: 'Motor matic irit dan ringan, cocok untuk aktivitas harian.',
+                    images: [
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/01-9-26062026-031206.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/02-11-26062026-031210.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/03-10-26062026-031212.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/04-9-26062026-031215.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/05-8-26062026-031218.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/06-5-26062026-031221.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/08-3-26062026-031231.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-4-26062026-031228.png'
+                    ]
+                  })"
+                  class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                  style="background-color:#0F2F34"
+                >
+                  Lihat Detail →
+                </button>
+          </div>
+
+          <!-- BeAT Street --> 
+          <div class="bg-white rounded-3xl p-5
+            shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+            hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+            hover:-translate-y-1
+            transition-all duration-300
+            fade-up">
+            <div class="overflow-hidden rounded-2xl">
+              <img src="https://ik.imagekit.io/zlt25mb52fx/tr:w-550,f-auto/uploads/product/thumbnail/new-thumbnail-beat-street-1-26062026-055644.png" class="mx-auto transition-transform duration-300 hover:scale-105">
+            </div>
+              <h5 class="font-bold">BeAT Street</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 20,650,000</span></p>
+                <button
+                  onclick="openModal({
+                    name: 'BeAT Street',
+                    desc: 'Tampil beda, makin berani! Desain street style yang tangguh buat kamu yang suka tampil keren di jalanan.',
+                    images: [
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-3-3-26062026-063601.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-2-3-26062026-063605.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-1-3-26062026-063608.png'
+                    ]
+                  })"
+                  class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                  style="background-color:#0F2F34"
+                >
+                  Lihat Detail →
+                </button>
+          </div>
+
+            <!-- Genio -->
+            <div class="bg-white rounded-3xl p-5
+            shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+            hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+            hover:-translate-y-1
+            transition-all duration-300
+            fade-up">
+            <div class="overflow-hidden rounded-2xl">
+              <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-genio-new-3-29102025-075221.png" class="mx-auto transition-transform duration-300 hover:scale-105">
+            </div>
+              <h5 class="font-bold">Genio</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 20,900,000</span></p>
+                <button
+                  onclick="openModal({
+                    name: 'Genio',
+                    desc: 'Gaya Kekinian, Irit, dan Nyaman! Pilihan skutik stylish untuk anak muda aktif.',
+                    images: [
+                     'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-varian-warna-01-29102025-031837.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-varian-warna-02-29102025-031839.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-varian-warna-03-29102025-031842.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-varian-warna-04-29102025-031844.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-varian-warna-05-29102025-031847.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/07-varian-warna-06-29102025-031849.png'
+                    ]
+                  })"
+                  class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                  style="background-color:#0F2F34"
+                >
+                  Lihat Detail →
+                </button>
+          </div>
+
+            <!-- Scoopy -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/product-thumbnail-400x300-copy-1-13112025-030828.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda Scoopy">
+              </div>
+
+              <h5 class="font-bold mt-2">Scoopy</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 23,725,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Scoopy',
+                  desc: 'Skutik ikonik dengan desain retro-modern, nyaman digunakan harian dan penuh gaya.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-01-13112025-031205.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-02-13112025-031208.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-03-13112025-031211.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-04-13112025-031214.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-05-13112025-031217.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-06-13112025-031220.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-07-13112025-031223.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-08-13112025-031225.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-09-13112025-031228.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-10-13112025-031231.png'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+
+            <!-- Vario 125 -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/2-67-08122025-121344.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda Vario 125">
+              </div>
+
+              <h5 class="font-bold mt-2">Vario 125</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 24,925,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Vario 125',
+                  desc: 'Skutik sporty dengan performa responsif, fitur modern, dan desain agresif untuk mobilitas harian.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-4-1-05122025-010949.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-5-1-05122025-010951.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-6-1-05122025-010953.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-7-1-05122025-010956.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-8-1-05122025-010958.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-9-1-05122025-011001.jpg'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+            
+            <!-- Vario 125 Street -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/1-73-08122025-115926.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda Vario 125 Street">
+              </div>
+
+              <h5 class="font-bold mt-2">Vario 125 Street</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 27,300,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Vario 125 Street',
+                  desc: 'Tampil lebih agresif dengan desain street style, velg gelap, dan karakter sporty untuk pengendara aktif.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-1-9-08122025-120222.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-2-6-08122025-120224.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-3-2-08122025-120226.jpg'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+           <!-- Vario 160 -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/uploads/product/thumbnail/product-thumbnail-400x300px-7-24062026-031501.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda Vario 160">
+              </div>
+
+              <h5 class="font-bold mt-2">Vario Evo 160</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 28,650,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Vario 160',
+                  desc: 'Skutik premium bermesin 160cc dengan performa bertenaga, desain agresif, dan fitur modern untuk kenyamanan maksimal.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-abs-ultimate-glossy-purple-515x504px-24062026-030628.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-abs-ultimate-matte-red-515x504px-24062026-030637.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-abs-ultimate-matte-white-515x504px-24062026-030640.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-abs-ultimate-matte-black-515x504px-24062026-030644.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-cbs-nitro-glossy-grey-lime-515x504px-24062026-030651.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-cbs-nitro-matte-black-red-515x504px-24062026-030655.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-cbs-glossy-white-red-515x504px-24062026-030702.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/uploads/product-draft/colors/varian-warna-cbs-glossy-blue-lime-515x504px-24062026-030706.png'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+            <!-- Stylo 160 -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/stylo-red-400x300pxl-02042026-044458.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda Stylo 160">
+              </div>
+
+              <h5 class="font-bold mt-2">Stylo 160</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 29,375,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Stylo 160',
+                  desc: 'Skutik premium bergaya klasik-modern dengan mesin 160cc, nyaman, elegan, dan berkelas.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-01-02042026-044627.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-02-02042026-044630.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-03-02042026-044632.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-04-02042026-044635.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-05-02042026-044637.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-06-02042026-044640.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/variant-warna-masterr-07-02042026-044644.png'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+
+            </div>
+
+            <!-- PCX 160 -->
+              <div class="bg-white rounded-3xl p-5
+                shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+                hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+                hover:-translate-y-1
+                transition-all duration-300
+                fade-up">
+
+                <div class="overflow-hidden rounded-2xl">
+                  <img
+                    src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/product-thumbnail-400x300-4-11022026-041017.png"
+                    class="mx-auto transition-transform duration-300 hover:scale-105"
+                    alt="Honda PCX 160">
+                </div>
+
+                <h5 class="font-bold mt-2">PCX 160</h5>
+
+                <p class="text-sm text-gray-600 mb-3">
+                  Harga mulai <span class="font-semibold">Rp. 34,200,000</span>
+                </p>
+
+                <button
+                  onclick="openModal({
+                    name: 'PCX 160',
+                    desc: 'Skutik flagship Honda dengan kenyamanan premium, fitur canggih, dan performa 160cc yang halus.',
+                    images: [
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-09-3-11022026-060041.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-10-3-11022026-060043.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-01-2-11022026-055530.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-02-2-11022026-055532.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-03-2-11022026-055535.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-04-2-11022026-055538.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-08-3-11022026-055553.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-05-3-11022026-055545.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-06-3-11022026-055548.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-515x504-07-3-11022026-055551.png'
+                    ]
+                  })"
+                  class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                  style="background-color:#0F2F34">
+                  Lihat Detail →
+                </button>
+
+              </div>
+
+              <!-- ADV 160 -->
+              <div class="bg-white rounded-3xl p-5
+                shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+                hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+                hover:-translate-y-1
+                transition-all duration-300
+                fade-up">
+
+                <div class="overflow-hidden rounded-2xl">
+                  <img
+                    src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/product-thumbnail-400x300px-1-08092025-030705.png"
+                    class="mx-auto transition-transform duration-300 hover:scale-105"
+                    alt="Honda ADV 160">
+                </div>
+
+                <h5 class="font-bold mt-2">ADV 160</h5>
+
+                <p class="text-sm text-gray-600 mb-3">
+                  Harga mulai <span class="font-semibold">Rp. 37,250,000</span>
+                </p>
+
+                <button
+                  onclick="openModal({
+                    name: 'ADV 160',
+                    desc: 'Skutik adventure premium dengan mesin 160cc, suspensi tangguh, dan desain siap segala medan.',
+                    images: [
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/7-26-08092025-031359.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/6-rev-08092025-031405.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/5-42-08092025-031413.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/4-42-08092025-031430.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/3-42-08092025-031443.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/2-61-08092025-031447.png',
+                      'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/1-67-08092025-031450.png'
+                    ]
+                  })"
+                  class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                  style="background-color:#0F2F34">
+                  Lihat Detail →
+                </button>
+
+              </div>
+
+          </div>
+        </div>
+
+                <!-- SPORT -->
+        <div id="sport" class="category-block mb-14 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <!-- CB150 VERZA -->
+            <div class="bg-white rounded-3xl p-5 shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 fade-up">
+              <div class="overflow-hidden rounded-2xl">
+                <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/verza-product-thumbnail-400x300px-2-24042025-082912.png" class="mx-auto hover:scale-105 transition" alt="CB150 Verza">
+              </div>
+              <h5 class="font-bold mt-2">CB150 Verza</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 24,600,000</span></p>
+              <button onclick="openModal({
+                name:'CB150 Verza',
+                desc:'Motor sport tangguh, nyaman, dan irit untuk penggunaan harian.',
+                images:[
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/verza-varian-warna-515x504px-bold-red-1-24042025-082818.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/verza-varian-warna-515x504px-macho-matte-black-1-24042025-082822.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/verza-varian-warna-515x504px-masculine-black-1-24042025-082825.png'
+                ]})"
+                class="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background:#0F2F34">Lihat Detail →</button>
+            </div>
+
+            <!-- SONIC 150R -->
+            <div class="bg-white rounded-3xl p-5 shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 fade-up">
+              <div class="overflow-hidden rounded-2xl">
+                <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/sonic-150r-550x413px-r1-22112024-041432.png" class="mx-auto hover:scale-105 transition" alt="Sonic 150R">
+              </div>
+              <h5 class="font-bold mt-2">Sonic 150R</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 28,400,000</span></p>
+              <button onclick="openModal({
+                name:'Sonic 150R',
+                desc:'Motor hyper underbone dengan performa tinggi dan karakter agresif.',
+                images:[
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/new-energetic-red-1-16042021-014724.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/new-activo-black-1-16042021-014727.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/new-aggresso-matte-black-1-16042021-014730.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/honda-racing-red-1-16042021-014733.jpg'
+                ]})"
+                class="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background:#0F2F34">Lihat Detail →</button>
+            </div>
+
+            <!-- CB150R STREETFIRE -->
+            <div class="bg-white rounded-3xl p-5 shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 fade-up">
+              <div class="overflow-hidden rounded-2xl">
+                <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/cb1504-550x413px-r1-22112024-041458.png" class="mx-auto hover:scale-105 transition" alt="CB150R Streetfire">
+              </div>
+              <h5 class="font-bold mt-2">CB150R Streetfire</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 34,375,000</span></p>
+              <button onclick="openModal({
+                name:'CB150R Streetfire',
+                desc:'Naked sport modern dengan desain agresif dan performa bertenaga.',
+                images:[
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/variant-5-7-07052021-090322.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/variant-1-7-07052021-090326.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/variant-3-7-07052021-090331.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/variant-4-8-07052021-090335.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/variant-2-9-07052021-090338.jpg'
+                ]})"
+                class="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background:#0F2F34">Lihat Detail →</button>
+            </div>
+
+            <!-- CB150X -->
+            <div class="bg-white rounded-3xl p-5 shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 fade-up">
+              <div class="overflow-hidden rounded-2xl">
+                <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/fa-ahm-sport-mid-thumbnail-550x413px-21112024-100503.png" class="mx-auto hover:scale-105 transition" alt="CB150X">
+              </div>
+              <h5 class="font-bold mt-2">CB150X</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 34,825,000</span></p>
+              <button onclick="openModal({
+                name:'CB150X',
+                desc:'Motor sport adventure ringan dengan kenyamanan touring.',
+                images:[
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/fa-ahm-sport-mid-variant-warna-matte-brown-515x504pxl-ys-7-24012024-042143.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/fa-ahm-sport-mid-variant-warna-matte-green-515x504pxl-ys-5-24012024-042203.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/mandala-red-1-1-24012024-045938.jpg',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/advance-black-2-1-24012024-050512.jpg'
+                ]})"
+                class="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background:#0F2F34">Lihat Detail →</button>
+            </div>
+
+            <!-- CRF150L -->
+            <div class="bg-white rounded-3xl p-5 shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 fade-up">
+              <div class="overflow-hidden rounded-2xl">
+                <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/revproduct-thumbnail-crf150l-400x300px-28072025-020216.png" class="mx-auto hover:scale-105 transition" alt="CRF150L">
+              </div>
+              <h5 class="font-bold mt-2">CRF150L</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 37,550,000</span></p>
+              <button onclick="openModal({
+                name:'CRF150L',
+                desc:'Motor trail handal untuk on-road dan off-road.',
+                images:[
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-crf-150l-5mb-extreme-red-28072025-111507.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-crf-150l-5mb-extreme-white-28072025-111513.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-crf-150l-5mb-extreme-black-28072025-111522.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,f-auto,pr-true/uploads/product-draft/colors/varian-warna-crf-150l-5mb-extreme-green-28072025-111533.png'
+                ]})"
+                class="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background:#0F2F34">Lihat Detail →</button>
+            </div>
+
+            <!-- CBR150R -->
+            <div class="bg-white rounded-3xl p-5 shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 fade-up">
+              <div class="overflow-hidden rounded-2xl">
+                <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-cbr150r-550x413px-tr-new-2-21112024-100742.png" class="mx-auto hover:scale-105 transition" alt="CBR150R">
+              </div>
+              <h5 class="font-bold mt-2">CBR150R</h5>
+              <p class="text-sm text-gray-600 mb-3">Harga mulai <span class="font-semibold">Rp. 38,775,000</span></p>
+              <button onclick="openModal({
+                name:'CBR150R',
+                desc:'Motor sport fairing dengan DNA balap dan performa tinggi.',
+                images:[
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/ahm-cbr150r-red-racing-515x504px-1-23102024-070622.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/ahm-cbr150r-tricolor-abs-515x504px-3-23102024-085855.png',
+                  'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/ahm-cbr150r-matte-black-abs-515x504px-2-23102024-085905.png'
+                ]})"
+                class="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background:#0F2F34">Lihat Detail →</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CUB -->
+        <div id="cub" class="category-block mb-14 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <!-- REVO -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thmbnail-product-2-24012022-110536.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda Revo">
+              </div>
+
+              <h5 class="font-bold mt-2">Revo</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 18,275,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Honda Revo',
+                  desc: 'Motor bebek irit, tangguh, dan nyaman untuk kebutuhan harian.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/attractive-red-2-24012022-110047.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/quantum-black-4-24012022-110051.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/raving-red-2-24012022-110055.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/galaxy-blue-2-24012022-110058.jpg'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+            <!-- SUPRA X 125 FI -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-new-supra-x-5-04032022-102907.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Supra X 125 FI">
+              </div>
+
+              <h5 class="font-bold mt-2">Supra X 125 FI</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 21,525,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'Supra X 125 FI',
+                  desc: 'Motor bebek legendaris dengan performa bertenaga dan konsumsi BBM efisien.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/varian-1-2-04032022-102011.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/varian-2-2-04032022-102025.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/varian-3-2-04032022-102034.jpg'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+            <!-- GTR 150 -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/supra-gtr-150-4-27052021-092133.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="GTR 150">
+              </div>
+
+              <h5 class="font-bold mt-2">GTR 150</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 27,550,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'GTR 150',
+                  desc: 'Motor cub sport dengan desain agresif dan performa tinggi untuk pengendara sporty.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/sporty-spartan-red-1-16042021-015535.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/exclusive-matte-silver-1-16042021-015547.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/sporty-gun-black-1-16042021-015551.jpg',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product/colors/exclusive-matte-red-1-16042021-015554.jpg'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EV -->
+        <div id="ev" class="category-block mb-14 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <!-- ICON e: -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-light-sideview-blue-4-08102024-032201-09102024-051105.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda ICON e">
+              </div>
+
+              <h5 class="font-bold mt-2">ICON e:</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 28,000,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'ICON e:',
+                  desc: 'Motor listrik ringkas, modern, dan ramah lingkungan untuk mobilitas harian di perkotaan.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/icon-e-515-x-504-01-1-2-09102024-113619.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/icon-e-515-x-504-02-1-2-09102024-113624.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/icon-e-515-x-504-03-1-2-09102024-113630.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/icon-e-515-x-504-04-1-2-09102024-113638.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/icon-e-515-x-504-05-1-2-09102024-113644.png'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+            <!-- EM1 e: -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/em1-silver-samping-400x300-tr-21122023-045018.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda EM1 e">
+              </div>
+
+              <h5 class="font-bold mt-2">EM1 e: & EM1 e: PLUS</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 40,000,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'EM1 e:',
+                  desc: 'Motor listrik futuristik dengan baterai swap, praktis, dan cocok untuk mobilitas modern.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/warna-em1-white-515x504-tr-3-21122023-045422.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/warna-em1-black-515x504-tr-3-21122023-045432.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/warna-em1-red-515x504-tr-3-21122023-045443.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/warna-em1-silver-515x504-tr-21122023-045454.png'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+            <!-- CUV e: -->
+            <div class="bg-white rounded-3xl p-5
+              shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+              hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+              hover:-translate-y-1
+              transition-all duration-300
+              fade-up">
+
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/a01-p01-2025-cuve-mat-pearl-crater-white-rh-side-std-1-08102024-044120-09102024-053635.png"
+                  class="mx-auto transition-transform duration-300 hover:scale-105"
+                  alt="Honda CUV e">
+              </div>
+
+              <h5 class="font-bold mt-2">CUV e: & RoadSync Duo</h5>
+
+              <p class="text-sm text-gray-600 mb-3">
+                Harga mulai <span class="font-semibold">Rp. 54,450,000</span>
+              </p>
+
+              <button
+                onclick="openModal({
+                  name: 'CUV e:',
+                  desc: 'Motor listrik premium dengan fitur RoadSync Duo dan teknologi canggih untuk pengalaman berkendara modern.',
+                  images: [
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/515-x-504-01-1-3-09102024-125739.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/515-x-504-02-1-3-09102024-125729.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/515-x-504-03-1-3-09102024-125720.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/515-x-504-04-1-3-09102024-125828.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/515-x-504-05-1-3-09102024-125817.png',
+                    'https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/515-x-504-06-1-3-09102024-125810.png'
+                  ]
+                })"
+                class="inline-block mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-white"
+                style="background-color:#0F2F34">
+                Lihat Detail →
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+
+<!-- MODAL PRODUK -->
+<div id="productModal"
+  class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+
+  <!-- WRAPPER RELATIVE (KUNCI) -->
+  <div class="relative">
+
+    <!-- KOTAK MODAL -->
+    <div class="bg-white rounded-3xl p-5
+      w-[90%] max-w-sm md:max-w-md
+      shadow-[0_25px_60px_rgba(0,0,0,0.25)]
+      animate-[scaleFade_0.3s_ease]">
+
+      <!-- TITLE -->
+      <h3 id="modalTitle" class="text-xl font-bold text-center mt-4"></h3>
+      <p id="modalDesc" class="text-gray-600 text-sm text-center mb-4"></p>
+
+      <!-- CAROUSEL -->
+      <div class="relative mb-4">
+        <div class="overflow-hidden rounded-xl">
+          <div id="imageTrack" class="flex transition-transform duration-300"></div>
+        </div>
+
+        <button onclick="prevImage()"
+          class="absolute left-2 top-1/2 -translate-y-1/2 bg-white shadow rounded-full w-8 h-8">
+          ‹
+        </button>
+
+        <button onclick="nextImage()"
+          class="absolute right-2 top-1/2 -translate-y-1/2 bg-white shadow rounded-full w-8 h-8">
+          ›
+        </button>
+      </div>
+
+      <!-- DOTS -->
+      <div id="dots" class="flex justify-center gap-2 mb-5"></div>
+
+      <!-- CTA -->
+      <a id="modalWhatsapp"
+        target="_blank"
+        class="block w-full py-3 rounded-lg text-white font-semibold text-center"
+        style="background-color:#25D366">
+        Pesan via WhatsApp
+      </a>
+
+    </div>
+
+    <!-- TOMBOL CLOSE (DI LUAR TAPI MEPET) -->
+    <button
+      onclick="closeModal()"
+      aria-label="Tutup detail"
+      class="absolute -top-3 -right-3
+             w-9 h-9
+             flex items-center justify-center
+             rounded-full
+             bg-white
+             shadow-md
+             text-gray-600 hover:text-gray-800
+             transition">
+      ✕
+    </button>
+
+  </div>
+</div>
+
+
+
+<!-- PROMO SECTION -->
+<section id="promo" class="py-16 bg-gradient-to-b from-white to-gray-50 fade-up">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <span
+        class="inline-block mb-3 px-4 py-1 text-white text-xs font-semibold rounded-full"
+        style="background-color:#0F2F34"
+      >
+        Promo Terbatas
+      </span>
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-3">
+        Promo Menarik Setia Kawan Motor
+      </h2>
+      <p class="text-gray-600 max-w-xl mx-auto">
+        Nikmati berbagai penawaran spesial untuk motor pilihan Anda.
+      </p>
+    </div>
+
+    <!-- Promo Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+      <!-- Promo 1 -->
+      <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition">
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-700 mb-3 inline-block">
+          DP Ringan
+        </span>
+
+        <img
+          src="img/Q.png"
+          alt="Promo DP BeAT"
+          class="w-full aspect-[4/3] object-cover rounded-2xl mb-4"
+        />
+
+        <h3 class="font-bold text-lg mb-2">DP Mulai 700 Ribu</h3>
+        <p class="text-gray-600 text-sm">
+          DP ringan mulai <strong>Rp 700.000</strong> khusus untuk
+          <strong>seri BeAT</strong>.
+        </p>
+      </div>
+
+      <!-- Promo 2 -->
+      <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition">
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-700 mb-3 inline-block">
+          BeAT Series
+        </span>
+
+        <img
+          src="img/W.png"
+          alt="Promo BeAT Series"
+          class="w-full aspect-[4/3] object-cover rounded-2xl mb-4"
+        />
+
+        <h3 class="font-bold text-lg mb-2">Potongan Tenor</h3>
+        <p class="text-gray-600 text-sm">
+          Untuk <strong>BeAT Series, BeAT Street, Genio, dan Scoopy</strong>,
+          tersedia <strong>potongan tenor 3x</strong> untuk
+          <strong>unit-unit type diatas</strong>.
+        </p>
+      </div>
+
+      <!-- Promo 3 -->
+      <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition">
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 mb-3 inline-block">
+          160 Series
+        </span>
+
+        <img
+          src="img/E.png"
+          alt="Promo 160 Series"
+          class="w-full aspect-[4/3] object-cover rounded-2xl mb-4"
+        />
+
+        <h3 class="font-bold text-lg mb-2">Promo 160 Series</h3>
+        <p class="text-gray-600 text-sm">
+          Untuk <strong>Vario 160, PCX 160, dan ADV 160</strong>,
+          tersedia <strong>potongan tenor 2x</strong> untuk
+          <strong>unit-unit type diatas</strong>.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+      <!-- Tanya Promo WA -->
+      <a
+  href="https://wa.me/6283821651354?text=Halo%20saya%20ingin%20tanya%20promo%20motor"
+  target="_blank"
+  onclick="gtag('event','click_whatsapp',{
+  event_category:'CTA',
+  event_label:'Promo Section'
+})"
+
+  class="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-xl font-semibold">
+  Tanya Promo via WhatsApp
+</a>
+
+
+      <!-- Lihat Brosur -->
+      <a
+  href="brosur.pdf"
+  target="_blank"
+  onclick="gtag('event','click_whatsapp',{
+  event_category:'CTA',
+  event_label:'Promo Section'
+})"
+
+  class="inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-xl font-semibold">
+  Lihat Brosur
+</a>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- SIMULASI KREDIT -->
+<section id="simulasi-kredit" class="py-20">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- HEADER -->
+    <div class="text-center mb-12">
+      <span
+        class="inline-block mb-3 px-4 py-1 text-white text-xs font-semibold rounded-full"
+        style="background-color:#0F2F34">
+        Simulasi Kredit
+      </span>
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-3">
+        Ajukan Simulasi Kredit Motor
+      </h2>
+      <p class="text-gray-600 max-w-xl mx-auto">
+        Pilih motor, tentukan DP dan tenor. Tim kami akan membantu simulasi terbaik untuk Anda.
+      </p>
+    </div>
+
+    <!-- FORM -->
+    <div class="bg-white rounded-3xl p-8 shadow-md max-w-4xl mx-auto">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+        <!-- KATEGORI -->
+        <div>
+          <label class="block text-sm font-semibold mb-2">Kategori Motor</label>
+          <select id="simKategori"
+            onchange="updateMotorList()"
+            class="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0F2F34]">
+            <option value="">Pilih Kategori</option>
+            <option value="Matic">Matic</option>
+            <option value="Cub">Cub</option>
+            <option value="Sport">Sport</option>
+            <option value="Electric">Electric</option>
+          </select>
+        </div>
+
+        <!-- MOTOR -->
+        <div>
+          <label class="block text-sm font-semibold mb-2">Pilih Motor</label>
+          <select id="simMotor" disabled
+            class="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0F2F34]">
+            <option value="">Pilih Motor</option>
+          </select>
+        </div>
+
+        <!-- DP -->
+        <div>
+          <label class="block text-sm font-semibold mb-2">Uang Muka (DP)</label>
+          <input id="simDP" type="number" placeholder="Contoh: 500000"
+            class="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0F2F34]" />
+        </div>
+
+        <!-- TENOR -->
+        <div>
+          <label class="block text-sm font-semibold mb-2">Tenor (Bulan)</label>
+          <select id="simTenor"
+            class="w-full border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0F2F34]">
+            <option value="">Pilih Tenor</option>
+            <option>11</option>
+            <option>17</option>
+            <option>23</option>
+            <option>29</option>
+            <option>35</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-8">
+        <button
+          onclick="kirimSimulasiWA()"
+          class="w-full py-3 rounded-lg text-white font-semibold transition"
+          style="background-color:#0F2F34">
+          Simulasi Kredit
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-500 mt-4 text-center">
+        *Simulasi akan dibantu langsung oleh tim kami melalui WhatsApp
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="tentang" class="py-16 border-t fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-3">
+        Tentang Setia Kawan Motor
+      </h2>
+    </div>
+
+    <!-- Deskripsi -->
+    <div class="max-w-4xl mx-auto text-center text-gray-600 leading-relaxed mb-14">
+      <p>
+        <strong>Setia Kawan Motor</strong> merupakan dealer resmi sepeda motor
+        Honda dengan <strong>kantor pusat yang berlokasi di Jl. Karanggetas,
+        Kota Cirebon</strong>. Kami berkomitmen memberikan pelayanan terbaik
+        dengan standar kualitas tinggi untuk setiap pelanggan.
+      </p>
+    </div>
+
+    <!-- Lokasi Cabang -->
+    <div class="mb-10">
+      <h3 class="text-xl md:text-2xl font-bold text-center mb-2">Lokasi Setia Kawan Motor</h3>
+      <p class="text-gray-600 text-sm text-center max-w-2xl mx-auto">
+        Kunjungi cabang Setia Kawan Motor yang paling dekat dengan Anda.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+      <!-- CABANG CIREBON -->
+      <div class="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <div class="p-6 space-y-5">
+          <div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-50 text-[#D90429] text-xs font-bold mb-3">
+              Dealer Pusat
+            </span>
+            <h3 class="font-bold text-xl text-[#0F2F34]">
+              Setia Kawan Motor Cirebon
+            </h3>
+          </div>
+
+          <!-- Alamat -->
+          <div class="flex items-start gap-3 text-sm">
+            <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22C12 22 19 15.5 19 10 A7 7 0 1 0 5 10 C5 15.5 12 22 12 22Z"
+                    stroke="#D90429" stroke-width="2"/>
+              <circle cx="12" cy="10" r="2.5" stroke="#D90429" stroke-width="2"/>
+            </svg>
+            <p class="text-gray-600 leading-relaxed">
+              Jl. Karanggetas No.180–184, Pekalangan,<br>
+              Kec. Pekalipan, Kota Cirebon 45118
+            </p>
+          </div>
+
+          <!-- Jam -->
+          <div class="flex items-start gap-3 text-sm">
+            <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="#D90429" stroke-width="2"/>
+              <path d="M12 7V12L15 14" stroke="#D90429" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <p class="text-gray-600">
+              Senin – Sabtu<br>08.30 – 16.30
+            </p>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="flex items-center justify-between gap-3 text-sm pt-1">
+            <div class="flex items-start gap-3">
+              <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.92V20 A2 2 0 0 1 20 22 C10.61 22 2 13.39 2 4 A2 2 0 0 1 4 2H7.09 A2 2 0 0 1 9.09 3.64L10.5 7.23 A2 2 0 0 1 9.96 9.32L8.21 11.21 A16 16 0 0 0 12.79 15.79L14.68 14.04 A2 2 0 0 1 16.77 13.5L20.36 14.91 A2 2 0 0 1 22 16.92Z"
+                      stroke="#D90429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="text-gray-600">0838-2165-1354 (Sales)</p>
+            </div>
+
+            <a href="https://wa.me/6283821651354" target="_blank"
+              onclick="gtag('event','click_whatsapp',{event_category:'CTA',event_label:'Tentang - Pusat Karanggetas'})"
+              class="inline-flex items-center bg-[#D90429] hover:bg-[#B90322] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+              Hubungi
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full h-[280px] border-t border-gray-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.675899740572!2d108.5458045871582!3d-6.7186189999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee264a62939fd%3A0xe78d28927370658c!2sSetia%20Kawan%20Motor!5e0!3m2!1sid!2sid!4v1790046526110!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+
+      <!-- CABANG CILEDUG -->
+      <div class="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <div class="p-6 space-y-5">
+          <div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-50 text-[#D90429] text-xs font-bold mb-3">
+              Dealer Cabang
+            </span>
+            <h3 class="font-bold text-xl text-[#0F2F34]">
+              Setia Kawan Motor Ciledug
+            </h3>
+          </div>
+
+          <!-- Alamat -->
+          <div class="flex items-start gap-3 text-sm min-h-[72px]">
+            <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22C12 22 19 15.5 19 10 A7 7 0 1 0 5 10 C5 15.5 12 22 12 22Z"
+                    stroke="#D90429" stroke-width="2"/>
+              <circle cx="12" cy="10" r="2.5" stroke="#D90429" stroke-width="2"/>
+            </svg>
+            <p class="text-gray-600 leading-relaxed">
+              Jalan Merdeka Barat No.41, Ciledug,<br>
+              RT.001/RW.2, Kec. Ciledug, Kabupaten Cirebon, Jawa Barat 45188
+            </p>
+          </div>
+<!-- Jam -->
+          <div class="flex items-start gap-3 text-sm">
+            <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="#D90429" stroke-width="2"/>
+              <path d="M12 7V12L15 14" stroke="#D90429" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <p class="text-gray-600">
+              Senin – Sabtu<br>08.30 – 16.30
+            </p>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="flex items-center justify-between gap-3 text-sm pt-1">
+            <div class="flex items-start gap-3">
+              <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.92V20 A2 2 0 0 1 20 22 C10.61 22 2 13.39 2 4 A2 2 0 0 1 4 2H7.09 A2 2 0 0 1 9.09 3.64L10.5 7.23 A2 2 0 0 1 9.96 9.32L8.21 11.21 A16 16 0 0 0 12.79 15.79L14.68 14.04 A2 2 0 0 1 16.77 13.5L20.36 14.91 A2 2 0 0 1 22 16.92Z"
+                      stroke="#D90429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="text-gray-600">0811-2189-051 (Sales)</p>
+            </div>
+
+            <a href="https://wa.me/628112189051" target="_blank"
+              onclick="gtag('event','click_whatsapp',{event_category:'CTA',event_label:'Tentang - Pusat Karanggetas'})"
+              class="inline-flex items-center bg-[#D90429] hover:bg-[#B90322] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+              Hubungi
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full h-[280px] border-t border-gray-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.468846460364!2d108.7275018871582!3d-6.906477999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f08ed1b4cd489%3A0xb4ecfabe92d6a188!2sDEALER%20HONDA%20SETIA%20KAWAN%20MOTOR%20II%20CIREBON!5e0!3m2!1sid!2sid!4v1790046562095!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- SERVICES / AHASS / SPAREPART -->
+<section id="layanan" class="py-20 bg-gray-50 fade-up overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-50 text-[#D90429] text-xs font-bold mb-4">
+        AFTER SALES SERVICE
+      </span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0F2F34] mb-4">AHASS, Servis & Sparepart</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Setelah motor Anda dibawa pulang, kami tetap siap membantu. Konsultasikan kebutuhan servis, perawatan, dan sparepart Honda bersama tim Setia Kawan Motor.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="service-card reveal-card bg-white rounded-3xl p-7 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-red-50 text-[#D90429] flex items-center justify-center mb-5 pulse-soft">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.4-.6-.6-2.4 2.1-2.1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m14 14 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#0F2F34] mb-3">Servis & Perawatan</h3>
+        <p class="text-sm text-gray-600 leading-relaxed mb-6">Tanyakan jadwal servis, perawatan berkala, atau kebutuhan pengecekan motor Anda.</p>
+        <a href="https://wa.me/6283821651354?text=Halo%20Setia%20Kawan%20Motor,%20saya%20ingin%20menanyakan%20servis%20motor." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full rounded-xl bg-[#D90429] hover:bg-[#B90322] text-white py-3 font-bold transition">Tanya Servis →</a>
+      </div>
+
+      <div class="service-card reveal-card bg-[#0F2F34] rounded-3xl p-7 text-white shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" style="transition-delay:.08s">
+        <div class="w-14 h-14 rounded-2xl bg-white/10 text-white flex items-center justify-center mb-5 float-soft">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 4v6m10-6v6M5 12h14v7H5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 15h3m2 0h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">AHASS / Bengkel</h3>
+        <p class="text-sm text-white/70 leading-relaxed mb-6">Butuh informasi bengkel, booking servis, atau ingin memastikan layanan yang tersedia? Hubungi kami langsung.</p>
+        <a href="https://wa.me/6283821651354?text=Halo%20Setia%20Kawan%20Motor,%20saya%20ingin%20menanyakan%20layanan%20AHASS%2Fbengkel." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full rounded-xl bg-white text-[#0F2F34] hover:bg-red-50 hover:text-[#D90429] py-3 font-bold transition">Hubungi Bengkel →</a>
+      </div>
+
+      <div class="service-card reveal-card bg-white rounded-3xl p-7 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" style="transition-delay:.16s">
+        <div class="w-14 h-14 rounded-2xl bg-red-50 text-[#D90429] flex items-center justify-center mb-5">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="m8 8 8 8M16 8l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 5h14v14H5z" stroke="currentColor" stroke-width="1.8"/><path d="M8 2v3m8-3v3M8 19v3m8-3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#0F2F34] mb-3">Sparepart Honda</h3>
+        <p class="text-sm text-gray-600 leading-relaxed mb-6">Cari sparepart atau komponen Honda? Kirim nama part atau kebutuhan Anda melalui WhatsApp.</p>
+        <a href="https://wa.me/6283821651354?text=Halo%20Setia%20Kawan%20Motor,%20saya%20ingin%20menanyakan%20sparepart%20Honda." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full rounded-xl bg-[#D90429] hover:bg-[#B90322] text-white py-3 font-bold transition">Tanya Sparepart →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-white fade-up">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-50 text-[#D90429] text-xs font-bold mb-4">FAQ</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0F2F34] mb-4">Pertanyaan yang Sering Ditanyakan</h2>
+      <p class="text-gray-600">Informasi singkat untuk membantu Anda sebelum membeli, kredit, atau menghubungi kami.</p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <button type="button" class="w-full flex items-center justify-between gap-6 text-left px-6 py-5 font-bold text-[#0F2F34]" aria-expanded="false">
+          <span>Apakah Setia Kawan Motor merupakan dealer resmi Honda?</span>
+          <span class="faq-icon text-2xl font-normal text-[#D90429]">+</span>
+        </button>
+        <div class="faq-answer"><div><p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Setia Kawan Motor merupakan dealer resmi sepeda motor Honda di Cirebon dan melayani kebutuhan pembelian motor Honda serta informasi terkait kredit dan layanan purna jual.</p></div></div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <button type="button" class="w-full flex items-center justify-between gap-6 text-left px-6 py-5 font-bold text-[#0F2F34]" aria-expanded="false">
+          <span>Apakah tersedia pembelian motor secara kredit?</span>
+          <span class="faq-icon text-2xl font-normal text-[#D90429]">+</span>
+        </button>
+        <div class="faq-answer"><div><p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Tersedia pilihan kredit. Anda dapat menggunakan fitur simulasi kredit di website atau langsung menghubungi tim kami untuk mendapatkan informasi mengenai DP, tenor, dan pilihan motor.</p></div></div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <button type="button" class="w-full flex items-center justify-between gap-6 text-left px-6 py-5 font-bold text-[#0F2F34]" aria-expanded="false">
+          <span>Bagaimana cara mengetahui promo yang sedang tersedia?</span>
+          <span class="faq-icon text-2xl font-normal text-[#D90429]">+</span>
+        </button>
+        <div class="faq-answer"><div><p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Promo dapat berubah mengikuti periode dan program yang tersedia. Anda dapat melihat section Promo atau menghubungi WhatsApp kami untuk mendapatkan informasi terbaru.</p></div></div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <button type="button" class="w-full flex items-center justify-between gap-6 text-left px-6 py-5 font-bold text-[#0F2F34]" aria-expanded="false">
+          <span>Apakah bisa bertanya mengenai stok dan warna motor?</span>
+          <span class="faq-icon text-2xl font-normal text-[#D90429]">+</span>
+        </button>
+        <div class="faq-answer"><div><p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Bisa. Ketersediaan unit, warna, dan detail lainnya dapat berubah, jadi silakan hubungi tim Setia Kawan Motor melalui WhatsApp untuk konfirmasi terbaru.</p></div></div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+        <button type="button" class="w-full flex items-center justify-between gap-6 text-left px-6 py-5 font-bold text-[#0F2F34]" aria-expanded="false">
+          <span>Apakah tersedia layanan servis dan sparepart?</span>
+          <span class="faq-icon text-2xl font-normal text-[#D90429]">+</span>
+        </button>
+        <div class="faq-answer"><div><p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Untuk informasi layanan servis, AHASS/bengkel, dan sparepart yang tersedia, silakan hubungi kami melalui WhatsApp agar tim dapat membantu sesuai kebutuhan Anda.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="kontak-cta" class="relative overflow-hidden py-20 md:py-24 bg-[#0F2F34] fade-up rounded-3xl mx-4 md:mx-6">
+  <img src="img/SKM.png" alt="Setia Kawan Motor" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0F2F34] via-[#0F2F34]/95 to-[#D90429]/80 rounded-3xl"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-xs font-bold mb-6 float-soft">
+      SIAP MEMILIH MOTOR HONDA?
+    </div>
+
+    <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-5">
+      Motor Impian Anda Bisa Dimulai Hari Ini.
+    </h2>
+
+    <p class="max-w-2xl mx-auto text-white/75 text-sm md:text-base leading-relaxed mb-8">
+      Konsultasikan pilihan motor, promo, kredit, servis, atau sparepart bersama tim Setia Kawan Motor melalui WhatsApp.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+      <a href="https://wa.me/6283821651354?text=Halo%20Setia%20Kawan%20Motor,%20saya%20ingin%20konsultasi%20tentang%20motor%20Honda."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="pulse-soft inline-flex items-center justify-center px-7 py-3.5 rounded-xl bg-[#D90429] hover:bg-[#B90322] text-white font-bold shadow-xl transition">
+        Chat WhatsApp →
+      </a>
+
+      <a href="#produk"
+        class="inline-flex items-center justify-center px-7 py-3.5 rounded-xl bg-white text-[#0F2F34] hover:bg-red-50 hover:text-[#D90429] font-bold shadow-xl transition">
+        Lihat Produk
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+      <!-- LOGO & BRAND -->
+      <div class="space-y-4">
+        <img
+          src="img/logoskm.png"
+          alt="Setia Kawan Motor"
+          class="h-50"
+        />
+
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Setia Kawan Motor adalah dealer resmi Honda di Cirebon yang
+          menyediakan berbagai pilihan motor Honda dengan proses mudah,
+          aman, dan terpercaya.
+        </p>
+      </div>
+
+      <!-- NAV / INFO -->
+      <div class="space-y-3 text-sm">
+        <p class="font-semibold text-gray-800">
+          Informasi
+        </p>
+
+        <ul class="space-y-2 text-gray-600">
+          <li>
+            <a href="#produk" class="hover:text-[#0F2F34]">
+              Produk
+            </a>
+          </li>
+          <li>
+            <a href="#promo" class="hover:text-[#0F2F34]">
+              Promo
+            </a>
+          </li>
+          <li>
+            <a href="#simulasi-kredit" class="hover:text-[#0F2F34]">
+              Simulasi Kredit
+            </a>
+          </li>
+          <li>
+            <a href="#tentang" class="hover:text-[#0F2F34]">
+              Tentang Kami
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CTA & SOCIAL -->
+      <div class="space-y-4">
+        <p class="font-semibold text-gray-800">
+          Hubungi Kami
+        </p>
+
+        <p class="text-sm text-gray-600">
+          Informasi harga, promo, dan ketersediaan unit.
+        </p>
+
+        <!-- CTA -->
+        <a
+          href="https://wa.me/6283821651354"
+          target="_blank"
+          class="inline-block px-5 py-3 rounded-lg text-white font-semibold"
+          style="background-color:#0F2F34"
+        >
+          Tanya Sekarang
+        </a>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="flex gap-4 pt-2">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/setiakawanmotor_cirebon/" target="_blank" class="text-gray-500 hover:text-[#0F2F34]">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="5"
+                    stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4"
+                      stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.5" cy="6.5" r="1"
+                      fill="currentColor"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/marketplace/profile/61564982805135/?_rdc=1&_rdr#" target="_blank" class="text-gray-500 hover:text-[#0F2F34]">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2H15
+                       A5 5 0 0 0 10 7V10H7V14H10V22H14V14H17L18 10H14V7
+                       A1 1 0 0 1 15 6H18V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@setiakawanmotor_cirebon" target="_blank" class="text-gray-500 hover:text-[#0F2F34]">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2V16
+                       A4 4 0 1 1 8 12"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"/>
+              <path d="M16 6
+                       A4 4 0 0 0 20 10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="border-t mt-10 pt-6 text-center text-sm text-gray-500">
+      © 2026 Setia Kawan Motor Cirebon. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+</div>
+</div>
+</section>
+
+     <script>
+        function showCategory(category) {
+          document.querySelectorAll('.category-block').forEach(el => el.classList.add('hidden'));
+          document.getElementById(category).classList.remove('hidden');
+
+          document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('bg-red-600', 'text-white');
+            btn.classList.add('bg-gray-100');
+          });
+          event.target.classList.add('bg-red-600', 'text-white');
+          event.target.classList.remove('bg-gray-100');
+        }
+      </script>
+
+<script>
+  let currentIndex = 0;
+  let currentProduct = null;
+
+  function openModal(product) {
+    currentProduct = product;
+    currentIndex = 0;
+
+    modalTitle.innerText = product.name;
+    modalDesc.innerText = product.desc;
+
+    renderImages();
+    updateCarousel();
+    openUI();
+    updateWhatsapp();
+  }
+
+  function renderImages() {
+    imageTrack.innerHTML = '';
+    dots.innerHTML = '';
+
+    currentProduct.images.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.className = 'w-full flex-shrink-0';
+      imageTrack.appendChild(img);
+
+      const dot = document.createElement('button');
+      dot.className =
+        `w-2.5 h-2.5 rounded-full ${
+          i === currentIndex ? 'bg-gray-800' : 'bg-gray-300'
+        }`;
+      dot.onclick = () => {
+        currentIndex = i;
+        updateCarousel();
+      };
+      dots.appendChild(dot);
+    });
+  }
+
+  function updateCarousel() {
+    imageTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+    [...dots.children].forEach((dot, i) => {
+      dot.className =
+        `w-2.5 h-2.5 rounded-full ${
+          i === currentIndex ? 'bg-gray-800' : 'bg-gray-300'
+        }`;
+    });
+  }
+
+  function prevImage() {
+    currentIndex =
+      currentIndex === 0
+        ? currentProduct.images.length - 1
+        : currentIndex - 1;
+    updateCarousel();
+  }
+
+  function nextImage() {
+    currentIndex =
+      currentIndex === currentProduct.images.length - 1
+        ? 0
+        : currentIndex + 1;
+    updateCarousel();
+  }
+
+  function updateWhatsapp() {
+    modalWhatsapp.href =
+      `https://wa.me/6283821651354?text=` +
+      encodeURIComponent(
+        `Halo Setia Kawan Motor, saya tertarik dengan ${currentProduct.name}. Mohon info lebih lanjut.`
+      );
+  }
+
+  function openUI() {
+    productModal.classList.remove('hidden');
+    productModal.classList.add('flex');
+  }
+
+  function closeModal() {
+    productModal.classList.add('hidden');
+    productModal.classList.remove('flex');
+  }
+</script>
+
+<script>
+/* ===============================
+   DATA KATEGORI & MOTOR
+================================ */
+const kategoriMotor = {
+  Matic: [
+    "Beat Sporty CBS", "Beat Sporty CBS ISS DLX", "Beat Sporty DLX Smart Key", "Beat Street",
+    "Genio CBS", "Genio CBS ISS",
+    "Scoopy Energetic/Fashion Non Smart Key", "Scoopy Prestige/Stylish Smart Key",
+    "Vario 125 CBS", "Vario 125 CBS ISS", "Vario 125 Street",
+    "Vario 160 CBS", "Vario 160 CBS Nitro", "Vario 160 ABS",
+    "Stylo 160 CBS", "Stylo 160 ABS","Stylo 160 ABS Special",
+    "PCX 160 CBS", "PCX 160 ABS", "PCX 160 ABS Roadsync",
+    "ADV 160 CBS", "ADV 160 ABS", "ADV 160 ABS Roadsync"
+  ],
+  Cub: [
+    "Revo Fit FI", "Revo X",
+    "Supra X 125 SW FI", "Supra X 125 CW FI",
+    "Supra GTR150 Sporty", "Supra GTR150 Exclusive"
+  ],
+  Sport: [
+    "Sonic 150R", "Sonic 150R SE Black/HRR",
+    "CB150 Verza SW", "CB150 Verza CW",
+    "CB150R Streetfire STD", "CB150R Streetfire SE",
+    "CB150X STD", "CB150X SE",
+    "CBR 150R STD HS & MH", "CBR 150R STD MP & RD",
+    "CBR 150R ABS HS & MH", "CBR 150R ABS Honda RD & OP",
+    "CRF150L"
+  ],
+  Electric: [
+    "EM1 e: + CHARGER",
+    "EM1 e: PLUS + CHARGER",
+    "CUV e: + CHARGER"
+  ]
+};
+
+/* ===============================
+   UPDATE LIST MOTOR
+================================ */
+function updateMotorList() {
+  const kategori = document.getElementById('simKategori').value;
+  const motorSelect = document.getElementById('simMotor');
+
+  motorSelect.innerHTML = '<option value="">Pilih Motor</option>';
+  motorSelect.disabled = true;
+
+  if (!kategoriMotor[kategori]) return;
+
+  kategoriMotor[kategori].forEach(motor => {
+    const opt = document.createElement('option');
+    opt.value = motor;
+    opt.textContent = motor;
+    motorSelect.appendChild(opt);
+  });
+
+  motorSelect.disabled = false;
+}
+
+/* ===============================
+   KIRIM KE WHATSAPP
+================================ */
+function kirimSimulasiWA() {
+  const kategori = document.getElementById('simKategori').value;
+  const motor = document.getElementById('simMotor').value;
+  const dp = document.getElementById('simDP').value;
+  const tenor = document.getElementById('simTenor').value;
+
+  if (!kategori || !motor || !dp || !tenor) {
+    alert('Silakan lengkapi kategori, motor, DP, dan tenor.');
+    return;
+  }
+
+  const pesan =
+    `Halo Setia Kawan Motor,%0A%0A` +
+    `Saya ingin simulasi kredit motor:%0A` +
+    `Kategori : ${kategori}%0A` +
+    `Motor : ${motor}%0A` +
+    `DP : Rp ${Number(dp).toLocaleString('id-ID')}%0A` +
+    `Tenor : ${tenor} bulan%0A%0A` +
+    `Mohon dibantu simulasinya. Terima kasih.`;
+
+  window.open(
+    `https://wa.me/6283821651354?text=${pesan}`,
+    '_blank'
+  );
+}
+</script>
+
+<script>
+/* Scroll Animation */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+<script>
+/* ===============================
+   HERO CAROUSEL
+================================ */
+(() => {
+  const slides = Array.from(document.querySelectorAll('.hero-slide'));
+  const dots = Array.from(document.querySelectorAll('.hero-dot'));
+  const prevBtn = document.getElementById('heroPrev');
+  const nextBtn = document.getElementById('heroNext');
+  const carousel = document.getElementById('heroCarousel');
+
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+  let autoplayTimer;
+
+  function showSlide(index) {
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, i) => {
+      const active = i === currentSlide;
+      slide.classList.toggle('opacity-100', active);
+      slide.classList.toggle('opacity-0', !active);
+      slide.classList.toggle('pointer-events-none', !active);
+    });
+
+    dots.forEach((dot, i) => {
+      const active = i === currentSlide;
+      dot.classList.toggle('w-8', active);
+      dot.classList.toggle('w-2', !active);
+      dot.classList.toggle('bg-white', active);
+      dot.classList.toggle('bg-white/45', !active);
+    });
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function startAutoplay() {
+    clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(nextSlide, 6000);
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    prevSlide();
+    startAutoplay();
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    nextSlide();
+    startAutoplay();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+      startAutoplay();
+    });
+  });
+
+  carousel?.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+  carousel?.addEventListener('mouseleave', startAutoplay);
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') {
+      prevSlide();
+      startAutoplay();
+    } else if (event.key === 'ArrowRight') {
+      nextSlide();
+      startAutoplay();
+    }
+  });
+
+  showSlide(0);
+  startAutoplay();
+})();
+</script>
+
+<script>
+/* ===============================
+   MOBILE MENU
+================================ */
+(() => {
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (!menuBtn || !mobileMenu) return;
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!isOpen));
+  });
+
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+
+<script>
+/* Navbar tetap merah, sedikit lebih solid saat scroll */
+const navbar = document.querySelector('[data-navbar]');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    navbar.classList.add('bg-[#C70325]', 'backdrop-blur-md', 'shadow-xl');
+    navbar.classList.remove('bg-[#D90429]');
+  } else {
+    navbar.classList.add('bg-[#D90429]');
+    navbar.classList.remove('bg-[#C70325]', 'backdrop-blur-md', 'shadow-xl');
+  }
+});
+</script>
+
+
+<script>
+/* FAQ accordion */
+document.querySelectorAll('.faq-item > button').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+
+    document.querySelectorAll('.faq-item').forEach(other => {
+      other.classList.remove('open');
+      other.querySelector('button')?.setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isOpen) {
+      item.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>
+
+<script>
+/* Reveal cards */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal-card').forEach(el => revealObserver.observe(el));
+</script>
+
+</body>
+</html>
